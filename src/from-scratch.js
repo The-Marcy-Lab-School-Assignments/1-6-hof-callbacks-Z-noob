@@ -1,3 +1,4 @@
+/** FEEDBACK: Overall great job, you need just a couple of more tests to pass! */
 const myForEach = (arr, callback) => {
   for (let i = 0; i < arr.length; i++) {
     callback(arr[i])
@@ -29,7 +30,7 @@ const myFilter = (arr, callback) => {
   };
   return arr2;
 };
-
+/** FEEDBACK: The 5 functions that deal with sorting are not passing the tests! They are not passing because they are modifying the original array! How can you modify the code so that they are not mutating the array? */
 const sortWords = (arr) => {
   return arr.toSorted();
 };
@@ -54,6 +55,7 @@ const sortUsersByOrder = (usersobj) => {
 
 const sortUsersByName = (usersobj) => {
   return usersobj.toSorted((a, b) => {
+    /** FEEDBACK: Each body needs an indent when there is new content! Make sure to follow spacing conventions! */
   if (a.name > b.name) return 1;   // any positive
   if (a.name < b.name) return -1;  // any negative
   return 0;  
